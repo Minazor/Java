@@ -1,9 +1,11 @@
 import java.util.Scanner;
-
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 public class Main {
     public static void main(String[] args) {
 
         int mat,fizik,kimya,turkce,tarih,muzik;
+        final DecimalFormat df = new DecimalFormat("0.00");
 
         Scanner inp = new Scanner(System.in);
 
@@ -27,7 +29,7 @@ public class Main {
 
         int toplam = (mat+ fizik + kimya + turkce + tarih + muzik);
         double ortalama = toplam / 6.0;
-        System.out.println("Ortalamanız =" + ortalama);
+        System.out.println("Ortalamanız =" + df.format(ortalama));
         String sonuc= (ortalama < 60) ? "Kaldınız." : "Geçtiniz.";
         System.out.println(sonuc);
     }
