@@ -1,3 +1,5 @@
+package Java.JavaHesapOrtalama.src;
+
 import java.util.Scanner;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;

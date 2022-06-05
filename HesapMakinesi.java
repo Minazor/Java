@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.Scanner;
 
 public class HesapMakinesi {
@@ -33,6 +35,5 @@ public class HesapMakinesi {
                 break;
             default : System.out.println("Somethings went wrong"); 
         }
-
-    }
+}
 }
